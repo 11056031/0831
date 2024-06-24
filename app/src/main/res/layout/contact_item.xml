@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#ECEBEB"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="姓名："
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+    <TextView
+        android:id="@+id/tel"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="電話："
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/call"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/trash"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/trash"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</LinearLayout>

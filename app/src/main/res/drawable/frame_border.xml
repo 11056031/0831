@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#00000000"/> <!-- 背景填充色，這裡設為透明 -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000"/>
+</shape>

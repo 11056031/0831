@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalActivity ">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="359dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="359dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="tel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <FrameLayout
+        android:id="@+id/ctl"
+        android:layout_width="136dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/frame_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ctlp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="39dp"
+            android:src="@drawable/list"
+            tools:srcCompat="@tools:sample/avatars" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/add"
+        android:layout_width="136dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/frame_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ctl">
+
+        <ImageView
+            android:id="@+id/addp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="39dp"
+            android:src="@drawable/person"
+            tools:srcCompat="@tools:sample/avatars" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/space"
+        android:layout_width="139dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/frame_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="98dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/person"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tel"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="165dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="60dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
